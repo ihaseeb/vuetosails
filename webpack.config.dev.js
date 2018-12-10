@@ -8,7 +8,7 @@ const path = require('path');
 module.exports = {
   devtool: 'source-map',
   entry: [
-    './client/index.js',
+    './client/main.js',
     'webpack-hot-middleware/client?reload=true'
   ],
   output: {

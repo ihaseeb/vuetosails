@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require("path");
 module.exports = {
   entry: {
-    entry: './client/index.js'
+    entry: './client/main.js'
   },
   output: {
     path: __dirname + '/dist/public',
