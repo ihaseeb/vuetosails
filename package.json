@@ -1,0 +1,50 @@
+{
+  "name": "vuetosails",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "grunt": "1.0.1",
+    "sails": "^1.1.0",
+    "sails-hook-grunt": "^3.1.0",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^1.5.5",
+    "vue": "^2.5.20",
+    "vue-router": "^3.0.2"
+  },
+  "devDependencies": {
+    "@sailshq/eslint": "^4.19.3",
+    "css-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.20",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "build": "webpack --config webpack.config.dev.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/haseeb/vuetosails.git"
+  },
+  "author": "haseeb",
+  "license": "ISC",
+  "engines": {
+    "node": "^8.12"
+  },
+  "bugs": {
+    "url": "https://github.com/haseeb/vuetosails/issues"
+  },
+  "homepage": "https://github.com/haseeb/vuetosails#readme"
+}
