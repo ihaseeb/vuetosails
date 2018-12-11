@@ -34,7 +34,7 @@ module.exports = {
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './dist/index.html',
+      template: 'index.html',
       inject: true
     })
   ]
